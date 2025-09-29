@@ -590,8 +590,9 @@ def setup_interactive_config() -> bool:
     print("Getting Cloudflare Credentials:")
     print("1. Sign up at https://cloudflare.com")
     print("2. Go to https://dash.cloudflare.com/profile/api-tokens")
-    print("3. Create Custom Token with 'Account:Cloudflare Workers:Edit' permission")
-    print("4. Copy the token and your Account ID from the dashboard")
+    print("3. Click Create Token and use the 'Edit Cloudflare Workers' template")
+    print("4. Set the 'account resources' and 'zone resources' to all. Click 'Continue to Summary'")
+    print("5. Click 'Create Token' and copy the token and your Account ID from the dashboard")
     print()
 
     # Get API token

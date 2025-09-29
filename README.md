@@ -102,9 +102,9 @@ python3 flareprox.py cleanup
 ### Cloudflare Workers Setup
 1. Sign up at [Cloudflare](https://cloudflare.com)
 2. Go to [API Tokens](https://dash.cloudflare.com/profile/api-tokens)
-3. Create Custom Token with permissions:
-   - `Account:Cloudflare Workers:Edit`
-4. Copy the token and your Account ID from the dashboard
+3. Click 'Create Token' and use the 'Edit Cloudflare Workers' template
+4. Set the 'account resources' and 'zone resources' to all. Click 'Continue to Summary'
+5. Click 'Create Token' and copy the token and your Account ID from the dashboard
 
 
 ## Programmatic Usage

